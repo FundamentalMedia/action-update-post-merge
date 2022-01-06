@@ -1,5 +1,7 @@
 # action-update-post-merge
 
+Just copy this in .github/workflows with the relevant branch names (from_branch, target_branch and on push:)
+
 ```bash
 name: Sync multiple branches
 on:

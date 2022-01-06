@@ -8,7 +8,6 @@ async function run() {
     const octokit = github.getOctokit(GITHUB_TOKEN); 
     
     const { context = {} } = github;
-    const { pull_request } = context.payload;
     
     const owner = context.repo.owner
     const repo  = context.repo.repo
