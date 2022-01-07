@@ -15,6 +15,7 @@ jobs:
       - uses: actions/checkout@master
 
       - name: Merge main/staging -> main/beta
+        if: always()
         uses: FundamentalMedia/action-update-post-merge@v1.1
         with:
           from_branch: main/staging
