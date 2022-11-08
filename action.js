@@ -21,7 +21,7 @@ async function run() {
         repo,
         base: target_branch,
         head: from_branch,
-        commit_message: "update automatically secondary branch with action"
+        commit_message: `Update automatically ${target_branch} branch with ${from_branch}.`
       });
 
 }
